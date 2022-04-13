@@ -4,28 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
     <title>My Website</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style.mobile.css">
+    <link rel="stylesheet" href="blog/blog.css">
 </head>
 <body>
-    <h1>Page Heading</h1>
-    <p>Page Content</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, rerum ducimus, numquam sunt, tempora consequatur distinctio nostrum vel alias ut laborum? Autem voluptates eaque ullam, impedit debitis cupiditate perferendis blanditiis distinctio sint! Praesentium omnis a minus molestiae ducimus recusandae illo molestias dolorem, magni quibusdam provident esse deleniti, explicabo id. Eius.
-    </p>
-    
-    <img src="flower.jpg" alt="flower">
-    <ul>
-        <li>
-           <a href="home.html">Home Page</a></li>
-        <li>
-           <a href="portfolio.html">Portfolio Page</a> </li>
-        <li>
-            <a href =contact.html>Contact Page</a></li>
-        <li>
-            <a href="blog.html">Blog Page</a>
-        </li>
-        <li>
-            <a href="sitereport.html">Site report</a>
-        </li>
+    <nav class="navigation">
+        <a href="index/index.html"><h2>Home Page</h2></a>
+     
+        <a href="portfolio/portfolio.html"><h2>Portfolio Page</h2></a> 
+     
+         <a href =contact/contact.html><h2>Page</h2></a>
+ 
+         <a href="blog/blog.html"><h2>Blog Page</h2></a>
+     
+         <a href="sitereport/sitereport.html"><h2>Site report</h2></a>
+     </nav>
+     <main>
+<h1>Welcome to My Website</h1>
+<p>
+    My name is Junaid Raja and this is the story of my humble beggining in the 
+    world of Software engineering part of which is devleoping my first webpage.
+</p>
+<p>
+    I have had intrest in technoloyg from a young age, i was always more intreseted in breaking my
+    toys to see what was inside them and how they worked instead of playing with them. So when i got the opportunity 
+    to be able to pursue my carreer here i am. 
+</p>
+<p>
+    I am first year student at university of Northampton 
+</p>
+     </main>
+     <aside class="bio">
+         <section class="names">
+             <h1>Junaid raja</h1>
+             <p>JR for short</p>
+         </section>
+<section class="Info">
+    <span>
+        <h2 class="title">D.O.B
+        </h2>
+        <P>30/06/1987</P>
+    </span>
+    <span>
+        <h2 class="title">pronouns</h2>
+        <p>He/Him</p>
+    </span>
+    <span>
+        <h2 class="title">Occupation</h2>
+        <p>Student</p>
+    </span>
+    <span>
+        <h2 class="title"> Studying </h2>
+        <p>BSc Computing(Software Engineering)</p>
+    </span>
+    <span>
+        <h2 class="title">Institution</h2>
+        <p>University of Northampton</p>
+    </span>
+    <span>
+        <h2 class="title">Gradutation Year</h2>
+        <p>2024</p>
+    </span>
+</section>
+<section class="generalInfo dropdown" id="langDrop">
+    <span id="lang">
+        <a href="./home/index.html#lang" class="close">X</a>
+        <a href="./home/index.html#langDrop"><h2 class="title">Languages</h2></a>
+    </span>
+    <ul class="langList">
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>Java</li>
+        
     </ul>
+</section>
+
+<section class="generalInfo dropdown" id="qualDrop">
+    <span id="qual">
+        <a href="./home/index.html#qual" class="close">X</a>
+        <a href="./home/index.html#qualDrop"><h2 class="title">Qualifications</h2></a>
+    </span>
+    <ul class="qualList">
+        
+        
+        <li>GCSE Mathematics</li>
+        <li>GCSE Physics</li>
+        <li>GCSE Chemistry</li>
+        
+        
+        <li>GCSE English Language</li>
+        <li>GCSE Computer Science</li>
+        <li>GCSE Business Studies</li>
+        <li>GCSE Product Design</li>
+        <li>GCSE Religious Studies</li>
+    </ul>
+</section>
+</aside>
+<footer>
+    &copy; Junaid Raja 2022
+</footer>
+     
 </body>
 </html>
