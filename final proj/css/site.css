@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: beige;
+    margin: 0;
+}
+
+footer {
+    background-color: black;
+    color: beige;
+    height: 48px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.75) 80%,
+        rgba(0, 0, 0, 1) 95%
+    );
+}
+
+.shownav {
+    display: none;
+}
+
+.navbar {
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: beige;
+    background-color: #363636;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: beige;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .shownav {
+        display: block;
+        margin: 16px;
+        height: 0.8em;
+        width: 1.25em;
+        display: block;
+        border-top: 0.2em solid white;
+        border-bottom: 0.2em solid white;
+        z-index: 10;
+    }
+
+    .shownav:before {
+        content: '';
+        position: absolute;
+        width: 1.25em;
+        margin-top: 0.3em;
+        border-top: 0.2em solid white;
+    }
+
+    #menu-open:target .shownav {
+        display: none;
+    }
+
+    .shownav.close {
+        display: none;
+    }
+
+    #menu-open:target .shownav.close {
+        display: block;
+    }
+
+    #menu-open ul {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 50%;
+        margin: auto;
+        padding: 20px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        color: beige;
+        background-color: #363636;
+        z-index: 5;
+    }
+    #menu-open:target ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 50%;
+    }
+    .content h1 {
+        font-size: 17px;
+    }
+    /* .navbar ul li {
+        display: block;
+    }
+    .navbar ul {
+        position: absolute;
+        background-color: rgb(61, 58, 54);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    } */
+}

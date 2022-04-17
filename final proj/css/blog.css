@@ -1,0 +1,29 @@
+.content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 5px;
+    color: beige;
+}
+.row {
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+}
+.col {
+    flex: 1;
+    background: #272323;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 16px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.col:hover {
+    box-shadow: 0 0 20px 0px rgba(240, 236, 236, 0.979);
+}
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}

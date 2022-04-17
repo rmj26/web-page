@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Page</title>
+        <link type="text/css" rel="stylesheet" href="css/site.css" />
+        <link type="text/css" rel="stylesheet" href="css/contact.css" />
+    </head>
+    <body class="banner">
+        <nav id="menu-open" class="navbar">
+            <a class="shownav" href="#menu-open"></a>
+            <a class="shownav close" href="#"></a>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="portfolio.html">Portfolio Page</a></li>
+                <li><a href="contact.html">Contact Page</a></li>
+                <li><a href="blog.html">Blog Page</a></li>
+                <li><a href="sitereport.html">Site report</a></li>
+            </ul>
+        </nav>
+        <section class="content">
+            <h1>Contact Details</h1>
+            <p>Phone number: +447383511107</p>
+            <p>Email Address: junaidraja26@gmail.com</p>
+            <form
+                id="contactdetails"
+                action="mailto:myemail@test.com"
+                method="GET"
+            >
+                <section class="contact-details">
+                    <h1>Send me an email!</h1>
+                    <label for="subject">Subject</label>
+                    <input
+                        name="subject"
+                        placeholder="Enter your Phone Number"
+                    />
+                    <label for="body">Body</label>
+                    <textarea
+                        name="body"
+                        placeholder="Enter your message or query here..."
+                    ></textarea>
+                </section>
+                <input type="submit" name="submit" value="Send" />
+            </form>
+        </section>
+        <footer>&copy; Junaid Raja 2022</footer>
+    </body>
+</html>
